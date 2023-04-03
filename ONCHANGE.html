@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Onchange</title>
+	<script type="text/javascript">
+		function functionchange(){
+
+		var store=document.getElementById("value").value;
+
+		document.getElementById("print").innerHTML="You selected:" + store;			
+		}
+		
+
+
+	</script>
+</head>
+<body>
+<form>
+	Select something to show below <select id="value" onchange="functionchange()">
+		<option>Audi</option>
+		<option>BMW</option>
+		<option>Lexus</option>
+		<option>Mahindra</option>
+	</select>
+	<br><br>
+	<span id="print"></span>
+</form>
+</body>
+</html>

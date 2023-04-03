@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Paint Dish</title>
+</head>
+<body>
+<canvas id="mycanvas" width="1400" height="700" style="border: 1px solid black;background-color: gray;">
+	<script type="text/javascript">
+		var canvas=document.getElementById("mycanvas");
+		var pointer=canvas.getContext('2d');
+
+		pointer.beginPath();
+		pointer.arc(700,350,250,0,2*Math.PI);
+		pointer.fillStyle="White";
+		pointer.fill();
+
+		pointer.beginPath();
+		pointer.arc(500,350,40,0,2*Math.PI);
+		pointer.fillStyle="Red";
+		pointer.fill();
+
+		pointer.beginPath();
+		pointer.arc(900,350,40,0,2*Math.PI);
+		pointer.fillStyle="yellow";
+		pointer.fill();
+
+		pointer.beginPath();
+		pointer.arc(700,150,40,0,2*Math.PI);
+		pointer.fillStyle="Green";
+		pointer.fill();
+
+		pointer.beginPath();
+		pointer.arc(850,230,40,0,2*Math.PI);
+		pointer.fillStyle="Blue";
+		pointer.fill();
+
+		pointer.beginPath();
+		pointer.arc(550,230,40,0,2*Math.PI);
+		pointer.fillStyle="Pink";
+		pointer.fill();
+
+		pointer.beginPath();
+		pointer.arc(700,450,90,0,2*Math.PI);
+		pointer.fillStyle="lightgray";
+		pointer.fill();
+
+		pointer.beginPath();
+		pointer.moveTo(100,200);
+		pointer.lineTo(300,200);
+		pointer.lineTo(300,300);
+		pointer.lineTo(100,300);
+		pointer.lineTo(100,200);
+		pointer.fillStyle="yellow";
+		pointer.fill();
+	
+	</script>
+</canvas>
+</body>
+</html>

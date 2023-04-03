@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SUBFORM</title>
+	<style type="text/css">
+		form{
+			font-size: 25px;
+		}
+		input{
+			font-size: 25px;
+		}
+		button{
+			font-size: 25px;
+		}
+	</style>
+	<script type="text/javascript">
+		
+		function printing(){
+			var email=document.forms["subform"]["e_mail"].value;
+			var finame=document.forms["subform"]["f_name"].value;
+			var laname=document.forms["subform"]["l_name"].value;
+
+			var something =document.write("Email: " + email);
+
+		}
+	</script>
+</head>
+<body>
+	<form name="subform">
+		EMAIL<br><br>
+		<input type="text" name="e_mail" id="email">
+		<br><br>
+		FIRST NAME<br><br>
+		<input type="text" name="f_name" id="fname">
+		<br><br>
+		LAST NAME<br><br>
+		<input type="text" name="l_name" id="lname">
+		<br><br>
+	<input type="button" value="SUBSCRIBE" onclick="printing()">
+	</form>
+	<span id="here"></span>
+</body>
+</html>

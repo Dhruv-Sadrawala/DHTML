@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+</head>
+<body>
+<canvas id="canvansbyme" width="1600" height="900" style="border: 1px solid black"></canvas>
+<script type="text/javascript">
+		var canva=document.getElementById("canvansbyme");
+		var work=canva.getContext("2d");
+		work.beginPath();
+		work.arc(500,500,250,0,2*Math.PI);
+		work.fillStyle="yellow";
+		work.fill();
+		
+		work.beginPath();
+		work.arc(375,400,25,0,2*Math.PI);
+		work.fillStyle="black";
+		work.fill();
+		
+		work.beginPath();
+		work.arc(615,400,25,0,2*Math.PI);
+		work.fillStyle="black";
+		work.fill();
+	
+		work.beginPath();
+		work.arc(500,525,170,0,1*Math.PI);
+		work.strokeStyle="red";
+		work.lineWidth=5;
+		work.stroke();
+	</script>
+</body>
+</html>

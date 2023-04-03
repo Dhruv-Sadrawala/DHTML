@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Onfocus</title>
+	<script type="text/javascript">
+		function changeBackgroundColorF(color) {
+        document.getElementById("myTextbox").style.backgroundColor = color;
+        }
+        function changeBackgroundColorB(color) {
+        document.getElementById("myTextbox").style.backgroundColor = color;
+        }
+	</script>
+</head>
+<body>
+Textbox 1  <input type="text" id="myTextbox" onfocus="changeBackgroundColorF('yellow')" onblur="changeBackgroundColorB('lightgreen')"><br><br>
+Textbox 2  <input type="text" id="myTextbox_2">
+</body>
+</html>
